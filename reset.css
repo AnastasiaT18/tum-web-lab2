@@ -46,3 +46,111 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+section{
+	width: 100%;
+	height: 100vh;
+	border: 1px solid black; 
+	background-color: pink;
+}
+
+#hero {
+	display: flex;
+	flex-direction: row;
+  }
+
+#hero-content-info{
+	/* border: 1px solid black;  */
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end; /* aligns text + CTA at the bottom */
+	padding: 0 5%; /* some horizontal padding */
+	box-sizing: border-box;
+} 
+
+/* #cookie-monster-photo {
+	position: absolute;
+	left: 0px; /* distance from the left edge of the hero section */
+	/* top: 20%;   vertically center */
+	/* transform: translateY(-50%); center precisely */
+	/* z-index: 1; behind the text */
+  /* } */ 
+
+#hero-text{
+	height:80%;
+	z-index: 2;
+	/* border: 1px solid black; */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: left;
+	margin-bottom: 10%;
+
+	font-size: 14vh;
+	font-family: "Chewy", sans-serif;
+	font-weight: 900;
+	color: #c23248;
+	
+	text-shadow:
+    4px 4px 0 #ff90b5;
+}
+
+#hero-text-line2{
+	color: white;
+	text-shadow:
+    4px 4px 0 #ff90b5;
+}
+
+
+
+#hero-cookie-photo{
+	/* border: 1px solid black; */
+	width: 40%;
+	height:100%;
+	text-align: right;
+}
+
+#cookie-photo{
+	height:100vh;
+}
+
+#hero-CTA{
+	height: 30%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;          /* makes it a flex container */
+    justify-content: flex-end; /* pushes child to the extreme right */
+    align-items: center;    /* vertically centers the CTA content */
+    /* font-family: "Chewy"; */
+
+}
+
+#cta-content {
+	color:white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;       /* centers button + text inside */
+	text-align: center;
+	font-family: "Gaegu", bold;
+
+  }
+
+  #cta-button {
+	color: white;
+	background-color: #c23248;
+	padding: 2vh 2vh;
+	border-radius: 1vh;
+	border: none;
+	font-size: 4vh;
+	margin-bottom: 1vh;
+	font-family: "Gaegu", bold;
+
+	cursor: pointer;
+  }
+
+  #cta-button:hover {
+	background-color: #ff90b5;
+	color: white;
+	transition: background-color 0.3s ease;
+  }
