@@ -155,12 +155,12 @@ section{
 	margin-bottom: 1vh;
 	font-family: "Poppins", bold;
 	cursor: pointer;
-
+	transition: 0.2s ease;
   }
 
   #cta-button:hover {
 	background-color: #ff90b5;
-	transform: translateY(-1px);
+	transform: translateY(-2px);
   }
 
   
@@ -203,7 +203,7 @@ section{
   #nav-right-div{
 	width:40%;
 	text-align: right;
-
+	padding-right: 4rem;
   }
 
   #contact-a{
@@ -429,6 +429,7 @@ section{
 
   #contact{
 	display: flex;
+	height: 90vh;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
