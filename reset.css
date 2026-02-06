@@ -309,7 +309,7 @@ section{
 
   #section-header{
 	width:100%;
-	margin-top: 5rem;
+	margin-top: 7rem;
 	display: flex;
 	justify-content: center;
 	align-items:flex-end;
@@ -453,7 +453,7 @@ section{
 
 @media (max-width: 768px) {
 	#section-header{
-		width: 70%;
+		width: 80%;
 	  }
 
 	  #grid-wrapper {
@@ -590,7 +590,8 @@ section{
   @media (max-width: 768px) {
 
 	#section-header-about{
-		margin-top: 4.5rem;
+		margin-top: 6.5rem;
+		width:80%;
 	}
 
 	#about-content{
@@ -611,8 +612,6 @@ section{
 	
 	  
   }
-
-
 
 
   #contact{
@@ -669,7 +668,7 @@ section{
 	background-color: #ff90b5;
 	color: white;
 	font-weight: 600;
-	font-size: 2vh;
+	font-size: 1rem;
 	font-family: "Poppins";
 	cursor: pointer;
 	transition: 0.2s ease;
@@ -693,3 +692,12 @@ section{
 #contact-photo{
 	height: 20vh;
 }
+
+
+@media (max-width: 768px) {
+
+	#contact-input{
+		width: 70%;
+	}
+
+  }
