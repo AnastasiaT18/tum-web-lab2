@@ -342,3 +342,88 @@ section{
 	font-size: 7vh;
 	color: #c23248;
   }
+
+
+
+#about{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 3rem;
+  }
+
+  #section-header-about{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items:flex-end;
+	/* height:20%; */
+	margin-bottom: 6vh;
+	text-align: center;
+	font-family: "Poppins", bold;
+	font-weight: 700;
+	font-size: 7vh;
+	color: #ff90b5;
+  }
+
+#header-subword-about{
+	font-family: "Chewy", bold;
+	font-weight: 700;
+	font-size: 7vh;
+	color: #c23248;
+	margin-left: 2vh;
+  } 
+
+
+  #about-content{
+	display: flex;
+	width:70%;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+
+
+  #about-photo-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  #about-photo{
+	height:50vh;
+  }
+
+  #about-content-text{
+	padding: 2rem;
+	width: 50%;
+  }
+
+  #about-text-1{
+	font-family: "Chewy", bold;
+	font-weight: 700;
+	font-size: 7vh;
+	color: #c23248;
+	margin-bottom: 2vh;;
+  }
+
+  #about-text-2{
+	font-family: "Poppins", bold;
+	font-size: 4vh;
+	font-weight: 600;
+  }
+
+  #about-content hr {
+	width: 100%;
+	border: none;
+	height: 2px;
+	background-color: black;
+	margin: 2rem 0 2rem 0;
+  }
+
+  #about-text-3{
+	font-family: "Poppins", bold;
+	font-size: 3vh;
+	font-weight: 500;
+  }
