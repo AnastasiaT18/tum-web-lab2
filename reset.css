@@ -154,14 +154,13 @@ section{
 	font-weight:600;
 	margin-bottom: 1vh;
 	font-family: "Poppins", bold;
-
 	cursor: pointer;
+
   }
 
   #cta-button:hover {
 	background-color: #ff90b5;
-	color: white;
-	transition: background-color 0.3s ease;
+	transform: translateY(-1px);
   }
 
   
@@ -198,13 +197,11 @@ section{
 	width:70%;
 	display: flex;
 	flex-direction: row;
-	/* border: 1px solid black; */
 	justify-content: space-between;
   }
 
   #nav-right-div{
 	width:40%;
-	/* border: 1px solid black; */
 	text-align: right;
 
   }
@@ -221,12 +218,14 @@ section{
 	font-size: 3vh;
 	font-weight:600;
 	cursor: pointer;
+	transition: 0.2s ease;
+
   }
 
   #contact-a:hover {
+	transform: translateY(-1px);
 	background-color: #ff90b5;
-	color: white;
-	transition: background-color 0.3s ease;
+
   }
 
   nav a{
@@ -427,3 +426,81 @@ section{
 	font-size: 3vh;
 	font-weight: 500;
   }
+
+  #contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  #section-header-contact{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items:flex-end;
+	/* height:20%; */
+	margin-bottom: 6vh;
+	text-align: center;
+	font-family: "Poppins", bold;
+	font-weight: 700;
+	font-size: 7vh;
+	color: white;
+  }
+
+
+  #contact-input{
+	width: 30%;
+	background-color: white;
+	display: flex;
+	gap: 1rem;
+	padding: 1rem;
+	border-radius: 20px;
+
+	box-shadow: 
+		0 10px 25px rgba(0,0,0,0.08),
+		0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  #contact-input input{
+	flex: 1;
+	border: none;
+	outline: none;
+	padding: 0.9rem 1rem;
+	font-size: 1rem;
+	border-radius: 12px;
+	background-color: #f6f6f6;
+	font-family: "Poppins";
+}
+
+#contact-input button{
+	border: none;
+	padding: 0.9rem 1.4rem;
+	border-radius: 12px;
+	background-color: #ff90b5;
+	color: white;
+	font-weight: 600;
+	font-size: 2vh;
+	font-family: "Poppins";
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+#contact-input button:hover{
+	background-color: #c23248;
+	color: white;
+	transform: translateY(-1px);
+}
+
+#contact-link{
+	transition: 0.2s ease;
+}
+
+#contact-link:hover{
+	opacity: 1;
+	transform: translateY(-3px);
+}
+
+#contact-photo{
+	height: 20vh;
+}
