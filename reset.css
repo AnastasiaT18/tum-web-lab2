@@ -198,7 +198,6 @@ section{
   }
 
 
-
   #nav-left-div{
 	width: 70%;
 	display: flex;
@@ -520,7 +519,6 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items:flex-end;
-	/* height:20%; */
 	margin-bottom: 6vh;
 	text-align: center;
 	font-family: "Poppins", bold;
@@ -564,14 +562,14 @@ section{
   #about-text-1{
 	font-family: "Chewy", bold;
 	font-weight: 700;
-	font-size: 7vh;
+	font-size: 3rem;
 	color: #c23248;
 	margin-bottom: 2vh;;
   }
 
   #about-text-2{
 	font-family: "Poppins", bold;
-	font-size: 4vh;
+	font-size: 1.5rem;
 	font-weight: 600;
   }
 
@@ -585,9 +583,37 @@ section{
 
   #about-text-3{
 	font-family: "Poppins", bold;
-	font-size: 3vh;
+	font-size: 0.9rem;
 	font-weight: 500;
   }
+
+  @media (max-width: 768px) {
+
+	#section-header-about{
+		margin-top: 4.5rem;
+	}
+
+	#about-content{
+		display: flex;
+		width:70%;
+		flex-direction: column;
+	  }
+	
+	
+	  #about-photo{
+		height:20vh;
+	  }
+	
+	  #about-content-text{
+		width: 80%;
+		text-align: center;
+	  }
+	
+	  
+  }
+
+
+
 
   #contact{
 	display: flex;
