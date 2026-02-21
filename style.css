@@ -1,51 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+* {
+    box-sizing: border-box;
+  }
 
 html {
 	scroll-behavior: smooth;
@@ -146,6 +101,7 @@ section{
 	transform: translateY(-2px);
   }
 
+  /* media queries for HERO section */
   @media (max-width: 768px) {
 
 	#hero-cookie-photo {
@@ -179,6 +135,10 @@ section{
 
 
 
+  }
+
+  #menu-toggle{
+    display: none;
   }
 
 
@@ -219,21 +179,25 @@ section{
   }
 
   #nav-right-div{
-	text-align: right;
-	width: 30%;
-	padding-right: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+	padding-right: 6rems;
+    height: 100%;
   }
 
   #contact-a{
 	color: white;
 	background-color: #c23248;
-	padding: 1vh 2vh;
+    height:70%;
+    padding: 2vh;          
 	border-radius: 1vh;
 	border: none;
 	font-size: 1.2rem;
-	margin-bottom: 1vh;
 	font-family: "Poppins", bold;
 	font-weight:600;
+    text-align: center;
 	cursor: pointer;
 	transition: 0.2s ease;
 
@@ -257,21 +221,51 @@ section{
 	color:black;
   }
 
+  
+
+    /* media queries for NAV */
   @media (max-width: 768px) {
 
-	nav a{
-		font-size: 0.9rem;
-		}
+    #nav-links {
+        display: none;
+    }
 
-	#contact-a{
-		font-size: 0.9rem;
-}
-	#nav-right-div{
-		padding-right: 2rem;
-	}
+    #contact-a {
+        display: none;
+    }
+
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #menu-toggle select{
+        appearance: none;        /* remove default arrow */
+        padding: 0.5rem 1rem;
+        border: none;
+        color: black;
+        font-size: 1.2rem;
+        cursor: pointer;    }
+
+    #menu-toggle select:focus{
+        outline: none;           
+        border: none;            
+        box-shadow: none;
+        background-color: none;
+      }
+
+    #menu-toggle select option{
+        border: 1px solid black;
+        font-family: "Poppins", bold;
+        font-size: 0.9rem;
+	    font-weight:600;
+    }
+
   }
 
-  @media (max-width: 400px) {
+  
+
+  /* @media (max-width: 400px) {
 
 	#logo{
 		display: none;
@@ -298,7 +292,7 @@ section{
 	#nav-right-div{
 		padding-right: 2rem;
 	}
-  }
+  } */
 
   #services{
 	background-color: white;

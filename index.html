@@ -18,14 +18,29 @@
         <div id="logo">
           <img src="logo.png" alt="Logo" id="logo-photo" />
         </div>
+
         <div id="nav-links">
           <a href="#hero">Home</a>
           <a href="#services">Services</a>
           <a href="#about">About</a>
         </div>
       </div>
+
       <div id="nav-right-div">
         <a href="#contact" id="contact-a">Contact</a>
+
+
+        <div id="menu-toggle">
+          <select id="menu-select">
+            <option value="" hidden selected>☰ Menu</option>
+            <option value="#hero">Home</option>
+            <option value="#services">Services</option>
+            <option value="#about">About</option>
+            <option value="#contact">Contact</option>
+          </select>
+        </div>
+        
+
       </div>
     </nav>
 
@@ -117,5 +132,20 @@
       </div> -->
     </section>
 
+
+    <script>
+      const menuSelect = document.getElementById('menu-select');
+    
+      menuSelect.addEventListener('change', function() {
+        const target = this.value;
+        if (target) {
+          // Smooth scroll to section
+          document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+
+          this.selectedIndex = 0;
+        }
+      });
+    </script>
   </body>
 </html>
+
