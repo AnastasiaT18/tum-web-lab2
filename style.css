@@ -1,0 +1,660 @@
+html {
+	scroll-behavior: smooth;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+  
+section{
+	background-color: pink;
+
+}
+
+  
+  #services{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
+  #section-header{
+	width:100%;
+	margin-top: 7rem;
+	display: flex;
+	justify-content: center;
+	align-items:flex-end;
+	height:20%;
+	text-align: center;
+	font-family: "Poppins", bold;
+	font-weight: 700;
+	font-size: 3rem;
+	color: #ff90b5;
+  }
+
+  #header-subword{
+	font-family: "Chewy", bold;
+	color: #c23248;
+  }
+
+  #grid-wrapper {
+	margin-top: 11rem;
+	flex: 1;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center; 
+  }
+
+  #cookie-grid {
+	height: 60%;
+	display: grid;
+	grid-template-columns: repeat(3, 240px);
+	gap: 7rem;
+	justify-content: center;
+	margin-bottom:3rem;
+  }
+
+  .cookie-card {
+	background-color: pink;
+	/* width: 300px;      */
+	/* border-radius: 15px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end; 
+	padding-bottom: 1rem;
+	position: relative;
+	overflow: visible;
+  }
+  
+  .cookie-photo {
+	width: 330px;                 
+	height: auto;
+	margin-bottom: auto;           
+	margin-top: -70%;            
+	z-index: 2; 
+  }
+
+  #cookie2{
+	margin-top: -37%;            
+  }
+
+  #cookie3{
+	width: 250px;
+	margin-top: -45%;            
+
+  }
+  
+  .cookie-name,
+  .cookie-card p:last-child {
+	text-align: center;
+	margin: 0.5rem 0;
+	z-index: 1;          
+	position: relative; 
+  }
+  
+
+  .cookie-name{
+	font-family: "Chewy", bold;
+	color: black;
+	font-size: 4vh;
+  }
+
+  .cookie-description{
+	font-family: "Poppins", bold;
+	font-size: 2vh;
+  }
+
+  #section-end{
+	margin: 2rem 0 2rem 0;
+	font-family: "Chewy", bold;
+	font-weight: 700;
+	font-size: 7vh;
+	color: #c23248;
+  }
+
+
+
+#about{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 3rem;
+  }
+
+  #section-header-about{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items:flex-end;
+	margin-bottom: 6vh;
+	text-align: center;
+	font-family: "Poppins", bold;
+	font-weight: 700;
+	font-size: 7vh;
+	color: #ff90b5;
+  }
+
+#header-subword-about{
+	font-family: "Chewy", bold;
+	font-weight: 700;
+	font-size: 7vh;
+	color: #c23248;
+	margin-left: 2vh;
+  } 
+
+
+  #about-content{
+	display: flex;
+	width:70%;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+
+
+  #about-photo-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  #about-photo{
+	height:50vh;
+  }
+
+  #about-content-text{
+	padding: 2rem;
+	width: 50%;
+  }
+
+  #about-text-1{
+	font-family: "Chewy", bold;
+	font-weight: 700;
+	font-size: 3rem;
+	color: #c23248;
+	margin-bottom: 2vh;;
+  }
+
+  #about-text-2{
+	font-family: "Poppins", bold;
+	font-size: 1.5rem;
+	font-weight: 600;
+  }
+
+  #about-content hr {
+	width: 100%;
+	border: none;
+	height: 2px;
+	background-color: black;
+	margin: 2rem 0 2rem 0;
+  }
+
+  #about-text-3{
+	font-family: "Poppins", bold;
+	font-size: 0.9rem;
+	font-weight: 500;
+  }
+
+  #contact{
+	display: flex;
+	height: 90vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  #section-header-contact{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items:flex-end;
+	/* height:20%; */
+	margin-bottom: 6vh;
+	text-align: center;
+	font-family: "Poppins", bold;
+	font-weight: 700;
+	font-size: 7vh;
+	color: white;
+  }
+
+
+  #contact-input{
+	width: 30%;
+	background-color: white;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+	gap: 1rem;
+	padding: 1rem;
+	border-radius: 20px;
+
+	box-shadow: 
+		0 10px 25px rgba(0,0,0,0.08),
+		0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  #contact-input input{
+	width: 60%;
+	border: none;
+	outline: none;
+	padding: 0.9rem 1rem;
+	font-size: 1.5vw;
+	border-radius: 12px;
+	background-color: #f6f6f6;
+	font-family: "Poppins";
+}
+
+#contact-input button{
+	border: none;
+	padding: 0.9rem 0.7rem;
+	border-radius: 12px;
+	background-color: #ff90b5;
+	color: white;
+	font-weight: 600;
+	font-size: 1.5vw;
+	font-family: "Poppins";
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+#contact-input button:hover{
+	background-color: #c23248;
+	color: white;
+	transform: translateY(-1px);
+}
+
+#contact-link{
+	transition: 0.2s ease;
+}
+
+#contact-link:hover{
+	opacity: 1;
+	transform: translateY(-3px);
+}
+
+#contact-photo{
+	height: 20vh;
+}
+
+
+@keyframes slideDiagonal {
+	0% {
+		transform: translate(-300px, 300px) rotate(16deg);
+		opacity: 0;
+	  }
+	  5% {
+		transform: translate(-45px, 100px) rotate(16deg); /* final visible spot */
+		opacity: 1;
+	  }
+	  10% {
+		opacity: 1;
+	  }
+	  80% {
+		transform: translate(-45px, 100px) rotate(16deg); /* stays visible */
+		opacity: 1;
+	  }
+	  100% {
+		transform: translate(-300px, 300px) rotate(16deg); /* slide out */
+		opacity: 0;
+	  }
+	}
+
+
+
+  @keyframes wiggle{
+	0%, 100% { transform: rotate(0deg) translateX(0); }
+	20% { transform: rotate(6deg) translateX(-5px); }
+	40% { transform: rotate(14deg) translateX(5px); }
+	60% { transform: rotate(8deg) translateX(-5px); }
+	80% { transform: rotate(12deg) translateX(5px); }
+  }
+  
+  #mascot {
+	position: fixed;
+	bottom: 0;  
+	left: 0;    
+	width: 800px;
+	z-index: 9999;
+	cursor: pointer;
+	opacity: 0;
+
+	animation: slideDiagonal 30s ease forwards;
+  }
+  
+  #mascot img {
+	width: 30%; 
+	transition: transform 0.2s ease;
+	pointer-events: auto;
+  }
+
+  .mascot-message{
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.6);
+	left:40%;
+	bottom: 90%;
+	color: black;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	font-family: "Poppins", bold;
+	font-size: 1rem;
+	font-weight: 600;
+	opacity: 0;
+
+	/* smooth fade in/out */
+	transition: opacity 0.5s ease;
+	transform: rotate(-16deg) translateX(-50%) translateY(-5px); /* counter-rotate */
+	pointer-events: none; /* avoid blocking hover */
+  }
+
+  #mascot:hover .mascot-message{
+	opacity: 1;
+}
+
+#mascot:not(:hover) .mascot-message {
+	transition-delay: 2s; /* stays for 2s after hover ends */
+	opacity: 0;
+	}
+
+#mascot img:hover {
+	animation: wiggle 1s ease infinite; /* start wiggle on hover */
+	/* animation-play-state: running; */
+}
+
+
+
+
+/* media queries for NAV */
+@media (max-width: 768px) {
+
+    #menu-toggle select option{
+        font-family: "Poppins", bold;
+        font-size: 0.9rem;
+	    font-weight:600;
+    }
+
+
+  }
+
+/* media queries for SERVICES section */
+  @media (max-width: 1024px) {
+
+	
+	#grid-wrapper {
+		margin-top: 6rem;
+	}
+
+    #cookie-grid {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+        gap: 3rem;
+		justify-items: center;
+
+    }
+
+	  .cookie-card {
+		background-color: pink;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end; 
+		padding-bottom: 1rem;
+		width: 60%;
+		position: relative;
+		overflow: visible;
+		margin-bottom: 5rem;
+	  }
+
+	  .cookie-card:last-child{
+		margin-top:3rem;
+		margin-bottom: 0;
+	  }
+
+
+	  .cookie-photo{
+		width: 20rem;
+	  }
+
+	  #cookie2{
+		width: 20rem;
+		margin-top: -37%;            
+	  }
+	
+	  #cookie3{
+		margin-top: -50%;            
+	
+	  }
+}
+
+@media (max-width: 768px) {
+	#section-header{
+		width: 80%;
+	  }
+
+	  #grid-wrapper {
+		margin-top: 6rem;
+	}
+
+    #cookie-grid {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+	    justify-items: center;
+
+    }
+	
+	  .cookie-card {
+		background-color: pink;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end; 
+		padding-bottom: 1rem;
+		width: 60%;
+		position: relative;
+		overflow: visible;
+		margin-bottom: 5rem;
+	  }
+
+	  .cookie-card:last-child{
+		margin-top:3rem;
+		margin-bottom: 0;
+	  }
+
+
+	  .cookie-photo{
+		width: 20rem;
+	  }
+
+	  #cookie2{
+		width: 20rem;
+		margin-top: -37%;            
+	  }
+	
+	  #cookie3{
+		margin-top: -50%;            
+	
+	  }
+	  
+	
+}
+
+/* media queries for ABOUT section */
+@media (max-width: 768px) {
+
+	#section-header-about{
+		margin-top: 6.5rem;
+		width:80%;
+	}
+
+	#about-content{
+		display: flex;
+		width:70%;
+		flex-direction: column;
+        align-items: center;
+	  }
+
+	
+	  #about-photo{
+		height:20vh;
+	  }
+	
+	  #about-content-text{
+        padding: 0rem;
+        padding-top: 1rem;
+		width: 100%;
+		text-align: center;
+	  }
+
+      #about-text-2{
+        font-family: "Poppins", bold;
+        font-size: 4.5vw;
+        font-weight: 500;
+      }
+
+
+      #about-text-3{
+        font-family: "Poppins", bold;
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+
+	
+	  
+  }
+
+
+/* media queries for CONTACT section */
+@media (max-width: 768px) {
+
+	#contact-input{
+		width: 35%;
+        flex-direction: column;
+        align-items: center;
+	}
+
+    #contact-input input{
+        width: 90%;
+        font-size: 2.3vw;
+
+     }
+
+    #contact-input button{
+       width: 50%;
+       font-size: 2.3vw;
+    }
+
+    #section-header-contact{
+        font-size: 15vw;
+    }
+
+    #contact-photo{
+        height: 30vw;
+    }
+
+  }
+
+@media (max-width: 430px) {
+
+	#contact-input{
+		width: 60%;
+        flex-direction: column;
+        align-items: center;
+	}
+
+    #contact-input input{
+        font-size: 2.9vw;
+        width: 100%;
+     }
+
+    #contact-input button{
+       font-size: 2.9vw;
+       width: 100%;
+    }
+
+  }
+
+
+  /* media queries for MASCOT section */
+@media (max-width: 768px) {
+
+
+	@keyframes slideDiagonalMobile {
+		0% {
+			transform: translate(-20%, 100%) rotate(16deg);
+			opacity: 0;
+		  }
+		  5% {
+			transform: translate(-4%, 45%) rotate(16deg); 
+			opacity: 1;
+		  }
+		  10% {
+			opacity: 1;
+		  }
+		  80% {
+			transform: translate(-4%, 45%) rotate(16deg); 
+			opacity: 1;
+		  }
+		  100% {
+			transform: translate(-20%, 100%) rotate(16deg); 
+			opacity: 0;
+		  }
+		}
+
+		@keyframes wiggleMobile {
+			0%, 100% { transform: rotate(0deg) translateX(0); }
+			20% { transform: rotate(1deg) translateX(-1px); }
+			40% { transform: rotate(2deg) translateX(1px); }
+			60% { transform: rotate(1deg) translateX(-1px); }
+			80% { transform: rotate(2deg) translateX(1px); }
+		  }
+
+		  @keyframes messageFadeMobile {
+			0% {
+			  opacity: 0;
+			}
+			10% {
+			  opacity: 1; 
+			}
+			80% {
+			  opacity: 1; 
+			}
+			100% {
+			  opacity: 0; 
+			}
+		  }
+
+	#mascot {
+		width: 400px;
+		animation: slideDiagonalMobile 20s ease forwards;
+	  }
+
+	#mascot img {
+		transition: transform 0.2s ease;
+		animation: wiggleMobile 1s ease 1s 10; 
+	  }
+
+	  #mascot img:hover {
+        animation: none;
+		animation: wiggleMobile 1s ease 1s 10;
+    }
+
+	.mascot-message{
+		left:52%;
+		font-size: 0.7rem;
+		animation: messageFadeMobile 10s ease forwards;
+		animation-delay: 1s;
+	}
+
+
+		}
+
