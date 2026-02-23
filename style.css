@@ -123,87 +123,7 @@ section{
 	color: #c23248;
   }
 
-  #contact{
-	display: flex;
-	height: 90vh;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-  }
-
-  #section-header-contact{
-	width:100%;
-	display: flex;
-	justify-content: center;
-	align-items:flex-end;
-	/* height:20%; */
-	margin-bottom: 6vh;
-	text-align: center;
-	font-family: "Poppins", bold;
-	font-weight: 700;
-	font-size: 7vh;
-	color: white;
-  }
-
-
-  #contact-input{
-	width: 30%;
-	background-color: white;
-	display: flex;
-    flex-direction: row;
-    justify-content: center;
-	gap: 1rem;
-	padding: 1rem;
-	border-radius: 20px;
-
-	box-shadow: 
-		0 10px 25px rgba(0,0,0,0.08),
-		0 2px 6px rgba(0,0,0,0.05);
-  }
-
-  #contact-input input{
-	width: 60%;
-	border: none;
-	outline: none;
-	padding: 0.9rem 1rem;
-	font-size: 1.5vw;
-	border-radius: 12px;
-	background-color: #f6f6f6;
-	font-family: "Poppins";
-}
-
-#contact-input button{
-	border: none;
-	padding: 0.9rem 0.7rem;
-	border-radius: 12px;
-	background-color: #ff90b5;
-	color: white;
-	font-weight: 600;
-	font-size: 1.5vw;
-	font-family: "Poppins";
-	cursor: pointer;
-	transition: 0.2s ease;
-}
-
-#contact-input button:hover{
-	background-color: #c23248;
-	color: white;
-	transform: translateY(-1px);
-}
-
-#contact-link{
-	transition: 0.2s ease;
-}
-
-#contact-link:hover{
-	opacity: 1;
-	transform: translateY(-3px);
-}
-
-#contact-photo{
-	height: 20vh;
-}
-
+  
 
 @keyframes slideDiagonal {
 	0% {
@@ -287,8 +207,6 @@ section{
 	animation: wiggle 1s ease infinite; /* start wiggle on hover */
 	/* animation-play-state: running; */
 }
-
-
 
 
 /* media queries for NAV */
@@ -403,56 +321,6 @@ section{
 	  
 	
 }
-
-/* media queries for CONTACT section */
-@media (max-width: 768px) {
-
-	#contact-input{
-		width: 35%;
-        flex-direction: column;
-        align-items: center;
-	}
-
-    #contact-input input{
-        width: 90%;
-        font-size: 2.3vw;
-
-     }
-
-    #contact-input button{
-       width: 50%;
-       font-size: 2.3vw;
-    }
-
-    #section-header-contact{
-        font-size: 15vw;
-    }
-
-    #contact-photo{
-        height: 30vw;
-    }
-
-  }
-
-@media (max-width: 430px) {
-
-	#contact-input{
-		width: 60%;
-        flex-direction: column;
-        align-items: center;
-	}
-
-    #contact-input input{
-        font-size: 2.9vw;
-        width: 100%;
-     }
-
-    #contact-input button{
-       font-size: 2.9vw;
-       width: 100%;
-    }
-
-  }
 
 
   /* media queries for MASCOT section */

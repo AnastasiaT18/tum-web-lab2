@@ -129,26 +129,35 @@
           <p class="font-medium text-base">
             📍 Made fresh daily in Bucharest
           </p>
-          
+
         </div>
 
       </div>
     </section>
     
-    <section id="contact">
-      <div id="section-header-contact">
-        <p>Want to know today's flavours?</p>
+    <section id="contact" class="flex flex-col items-center justify-center min-h-screen px-6 py-12 text-center">
+      <h2  class="text-white font-bold mb-12 text-[8vw] md:text-[3.5vw]">
+        Want to know today's flavours?
+      </h2>
+      
+
+      <div class="w-8/12 max-w-md flex flex-col gap-4 bg-white p-6 rounded-2xl shadow-lg">
+        <input 
+          type="email" 
+          placeholder="Your email" 
+          class="w-full p-4 rounded-lg bg-gray-100 text-gray-800 font-medium focus:outline-none focus:ring-2 focus:gray"
+        />
+        <button 
+          class="w-full bg-[#ff90b5] text-white font-semibold py-3 rounded-lg hover:bg-[#c23248] transition-transform duration-200 hover:-translate-y-0.5"
+        >
+          Notify me
+        </button>
       </div>
 
-      <div id="contact-input">
-        <input type="email" placeholder="Your email">
-        <button>Notify me</button>
-      </div>
-      <a id="contact-link" href="https://www.instagram.com/crumb.bakery.cookies/"><img src="photos/logo.png" alt="Logo" id="contact-photo" /></a>
+      <a href="https://www.instagram.com/crumb.bakery.cookies/" class="mt-8">
+        <img src="photos/logo.png" alt="Logo" class="w-28 h-auto mx-auto transition-transform duration-200 hover:-translate-y-1" />
+      </a>
 
-      <!-- <div id="contact-photo-div">
-        <img src="logo.png" alt="Logo" id="contact-photo" />
-      </div> -->
     </section>
 
 
