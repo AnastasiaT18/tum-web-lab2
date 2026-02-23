@@ -31,10 +31,47 @@ The page is built using **vanilla HTML and CSS** and is fully responsive across 
 ![About Section](screenshots/about.png)  
 ![Contact Section](screenshots/contact.png)  
 
-## Live Demo
-[View Live Site](https://anastasiat18.github.io/tum-web-lab2/)
-
 ## Additional Notes
 - All code is in `index.html` and `reset.css`  
 - Fonts used: **Chewy**, **Poppins**, and **Gaegu** from Google Fonts  
 - No frameworks or libraries were used
+
+---
+
+
+# Lab 3 - Responsive Design & Mascot
+
+## Description
+For Lab 3, the landing page was enhanced to improve **responsiveness** and include a **mascot** similar to Microsoft Clippy.  
+This ensures that the page is user-friendly on mobile devices and adds interactivity to engage visitors.
+
+## Customer Requirements Implemented
+- **Mobile responsiveness**:
+  - All elements scale correctly for desktop and mobile  
+  - Call-to-action button remains visible on mobile  
+  - Mobile-only elements included (the navigation links were transformed into a **toggle menu button** on mobile devices)  
+- **Mascot**:
+  - Smiling, waving cookie representing the bakery theme  
+  - Appears **delayed from the left corner** of the page  
+  - On hover, the mascot **wiggles** and displays the message:  
+    `Hi! Want to try today’s fresh cookies? 🍪`  
+  - Clicking the mascot navigates to the **contact section**  
+  - Behavior differs slightly on mobile: the mascot wiggles and the text appears immediately when it shows  
+  - On all devices, the mascot **disappears automatically after a few seconds**
+
+## Dev Requirements Implemented
+- Git history maintained with multiple commits  
+- Page deployed on **GitHub Pages** with live link  
+- Partial migration of the website to **TailwindCSS**
+
+## Tech Stack
+- HTML5  
+- TailwindCSS (for part of the website)  
+- CSS animations  
+- GitHub Pages for deployment  
+
+## Screenshots
+![Mascot Animation](screenshots/hero_and_mascot.png)  
+
+## Live Demo
+[View Live Lab 3](https://anastasiat18.github.io/tum-web-lab2/)
