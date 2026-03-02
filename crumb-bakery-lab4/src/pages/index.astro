@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Nav from '../components/Nav.astro';
 import Hero from "../components/Hero.astro";
+
 
 import fs from "fs";
 import path from "path";
@@ -9,8 +11,13 @@ import matter from "gray-matter";
 // Load Hero content
 const heroFile = fs.readFileSync(path.resolve("./src/content/hero.md"), "utf-8");
 const { data: heroData } = matter(heroFile);
+
+// Load Nav content
+const navFile = fs.readFileSync(path.resolve("./src/content/nav.md"), "utf-8");
+const { data: navData } = matter(navFile);
 ---
 <Layout>
+  <Nav {...navData}/>
   <Hero {...heroData} />
   
 </Layout>

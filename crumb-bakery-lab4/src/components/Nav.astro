@@ -1,0 +1,52 @@
+---
+const { logoSrc } = Astro.props;
+
+---
+
+<nav class="fixed top-0 w-full z-50 h-[10vh] flex items-center justify-between px-[4%] bg-white shadow-md">
+  <!-- Left side: logo + links -->
+  <div class="w-[70%] flex items-center">
+    <div id="logo" class="size-14 flex items-center justify-center">
+      <img src={logoSrc} alt="Logo" id="logo-photo" />
+    </div>
+
+    <div class="w-[70%] ml-6 flex justify-between hidden md:flex">
+      <a href="#hero" class="no-underline font-semibold text-[1.4rem] text-gray-700 hover:text-black">Home</a>
+      <a href="#services" class="no-underline font-semibold text-[1.4rem] text-gray-700 hover:text-black">Services</a>
+      <a href="#about" class="no-underline font-semibold text-[1.4rem] text-gray-700 hover:text-black">About</a>
+    </div>
+  </div>
+
+  <!-- Right side: contact button + mobile menu -->
+  <div class="w-[30%] flex items-center justify-end h-full">
+    <!-- Contact button -->
+    <a href="#contact" class="hidden md:flex items-center justify-center bg-[#c23248] text-white h-[70%] px-4 rounded-lg font-semibold text-[1.2rem] transition hover:bg-[#ff90b5] hover:-translate-y-[1px] hover:text-white">
+      Contact
+    </a>
+
+    <!-- Mobile menu select -->
+    <div id="menu-toggle" class="md:hidden">
+      <select id="menu-select" class="appearance-none px-4 py-2 text-[1.2rem] font-semibold font-[Poppins] cursor-pointer focus:outline-none">
+        <option value="" hidden selected id="menu-toggle-title">☰ Menu</option>
+        <option value="#hero">Home</option>
+        <option value="#services">Services</option>
+        <option value="#about">About</option>
+        <option value="#contact">Contact</option>
+      </select>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Smooth scroll for mobile menu
+  const menuSelect = document.getElementById('menu-select');
+  if (menuSelect) {
+    menuSelect.addEventListener('change', function() {
+      const target = this.value;
+      if (target) {
+        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+        this.selectedIndex = 0;
+      }
+    });
+  }
+</script>
