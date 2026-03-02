@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -11,4 +12,5 @@ const { data: heroData } = matter(heroFile);
 ---
 <Layout>
   <Hero {...heroData} />
+  
 </Layout>
