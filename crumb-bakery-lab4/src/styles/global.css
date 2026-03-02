@@ -1,6 +1,21 @@
 
 
-
+.hero-text-shadow {
+    text-shadow: 4px 4px 0 #ff90b5;
+  }
+  
+  
+  html {
+      scroll-behavior: smooth;
+    }
+    
+    html, body {
+      overflow-x: hidden;
+    }
+    section {
+      background-color: pink;
+    }
+  
 /* @import "./reset.css";
 @import "./style.css"; */
 
@@ -12,18 +27,3 @@
     --font-gaegu: "Gaegu", cursive;
   }
 
-.hero-text-shadow {
-  text-shadow: 4px 4px 0 #ff90b5;
-}
-
-
-html {
-    scroll-behavior: smooth;
-  }
-  
-  html, body {
-    overflow-x: hidden;
-  }
-  section {
-    background-color: pink;
-  }
