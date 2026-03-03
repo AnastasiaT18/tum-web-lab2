@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Content Manager</title>
   </head>
   <body>
@@ -10,5 +10,17 @@
 
     <!-- Include Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <!-- Include Netlify Identity -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <script>
+      // Initialize Netlify Identity
+      const identity = netlifyIdentity.init();
+
+      // Initialize Decap CMS
+      CMS.init({
+        config: '/admin/config.yml' // <-- points to your CMS config file
+      });
+    </script>
   </body>
 </html>

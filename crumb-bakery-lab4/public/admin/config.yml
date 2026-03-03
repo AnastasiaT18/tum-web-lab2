@@ -4,6 +4,9 @@ backend:
   branch: lab4-cms-integration  # your working branch
   site_domain: https://taupe-pixie-57d72a.netlify.app  # Netlify site
 
+# Enable editorial workflow (optional - allows draft/review/publish)
+publish_mode: editorial_workflow
+
 media_folder: "public/photos"  # where uploaded images are stored
 public_folder: "/photos"
 
@@ -79,3 +82,14 @@ collections:
         name: "nav"
         fields:
           - { label: "Logo Source", name: "logoSrc", widget: "image" }
+
+  # ---------------- PAGES ----------------
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "src/content/home.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
