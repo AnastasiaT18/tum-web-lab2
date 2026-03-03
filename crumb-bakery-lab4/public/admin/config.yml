@@ -1,0 +1,40 @@
+backend:
+  name: github
+  repo: AnastasiaT18/tum-web-lab2
+  branch: lab4-cms-integration
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "hero"
+    label: "Hero Section"
+    files:
+      - file: "src/content/hero.md"
+        label: "Hero"
+        name: "hero"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Button Text", name: "buttonText", widget: "string" }
+          - { label: "Hero Image", name: "heroImg", widget: "image" }
+
+  - name: "services"
+    label: "Services"
+    files:
+      - file: "src/content/services.md"
+        label: "Services"
+        name: "services"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Highlight", name: "highlight", widget: "string" }
+          - label: "Cookies"
+            name: "cookies"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Image Class", name: "imageClass", widget: "string" }
