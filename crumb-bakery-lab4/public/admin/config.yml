@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: AnastasIaT18/tum-web-lab2
   branch: lab4-cms-integration  # your working branch
   site_domain: https://taupe-pixie-57d72a.netlify.app  # Netlify site
