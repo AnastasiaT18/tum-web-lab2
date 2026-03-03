@@ -1,29 +1,31 @@
-
-
-.hero-text-shadow {
-    text-shadow: 4px 4px 0 #ff90b5;
-  }
-  
-  
-  html {
-      scroll-behavior: smooth;
-    }
-    
-    html, body {
-      overflow-x: hidden;
-    }
-    section {
-      background-color: pink;
-    }
-  
-/* @import "./reset.css";
-@import "./style.css"; */
-
 @import "tailwindcss";
 
 @theme {
     --font-chewy: "Chewy", cursive;
     --font-poppins: "Poppins", sans-serif;
     --font-gaegu: "Gaegu", cursive;
-  }
+}
+
+/* Import reset and custom styles AFTER Tailwind */
+/* @import "./reset.css"; */
+
+/* Custom utilities */
+.hero-text-shadow {
+    text-shadow: 4px 4px 0 #ff90b5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+section {
+    background-color: pink;
+}
 

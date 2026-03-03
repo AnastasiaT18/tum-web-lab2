@@ -4,6 +4,7 @@ import Nav from '../components/Nav.astro';
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
 import Contact from "../components/Contact.astro";
+import Services from "../components/Services.astro";
 
 
 import fs from "fs";
@@ -25,11 +26,16 @@ const { data: aboutData } = matter(aboutFile);
 // Load Contact content
 const contactFile = fs.readFileSync(path.resolve("./src/content/contact.md"), "utf-8");
 const { data: contactData } = matter(contactFile);
+
+// Load Services content
+const servicesFile = fs.readFileSync(path.resolve("./src/content/services.md"), "utf-8");
+const { data: servicesData } = matter(servicesFile);
 ---
 <Layout>
   <Nav {...navData}/>
   <Hero {...heroData} />
   <About {...aboutData} />
+  <Services {...servicesData} />
   <Contact {...contactData} />
   
 </Layout>
