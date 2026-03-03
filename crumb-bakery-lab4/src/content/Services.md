@@ -9,7 +9,7 @@ cookies:
   - name: "Banoffee Pie Cookie"
     description: "The cookie your sweet tooth has been texting you about"
     image: "/photos/cookie62.png"
-    imageClass: "absolute -top-30 w-[360px]"
+    imageClass: "absolute -top-25 w-[220px]"
   - name: "Oreo Red Velvet Cookie"
     description: "Double trouble, double delight"
     image: "/photos/cookie72.png"

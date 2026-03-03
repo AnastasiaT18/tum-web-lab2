@@ -5,6 +5,8 @@ import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
 import Contact from "../components/Contact.astro";
 import Services from "../components/Services.astro";
+import Mascot from "../components/Mascot.astro";
+
 
 
 import fs from "fs";
@@ -37,5 +39,7 @@ const { data: servicesData } = matter(servicesFile);
   <About {...aboutData} />
   <Services {...servicesData} />
   <Contact {...contactData} />
+  <Mascot />
+
   
 </Layout>
