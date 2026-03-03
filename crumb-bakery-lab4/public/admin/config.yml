@@ -4,8 +4,6 @@ backend:
   branch: lab4-cms-integration  # your working branch
   site_domain: https://taupe-pixie-57d72a.netlify.app  # Netlify site
 
-# Enable editorial workflow (optional - allows draft/review/publish)
-publish_mode: editorial_workflow
 
 media_folder: "public/photos"  # where uploaded images are stored
 public_folder: "/photos"
