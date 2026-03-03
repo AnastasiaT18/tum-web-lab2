@@ -1,19 +1,20 @@
 backend:
   name: github
-  repo: AnastasiaT18/tum-web-lab2
-  branch: lab4-cms-integration
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  repo: AnastasIaT18/tum-web-lab2
+  branch: lab4-cms-integration  # your working branch
+  site_domain: https://taupe-pixie-57d72a.netlify.app  # Netlify site
 
-media_folder: "public/uploads"
-public_folder: "/uploads"
+media_folder: "public/photos"  # where uploaded images are stored
+public_folder: "/photos"
 
 collections:
+
+  # ---------------- HERO ----------------
   - name: "hero"
     label: "Hero Section"
     files:
       - file: "src/content/hero.md"
-        label: "Hero"
+        label: "Hero Content"
         name: "hero"
         fields:
           - { label: "Title", name: "title", widget: "string" }
@@ -21,20 +22,60 @@ collections:
           - { label: "Button Text", name: "buttonText", widget: "string" }
           - { label: "Hero Image", name: "heroImg", widget: "image" }
 
+  # ---------------- ABOUT / ADMIN ----------------
+  - name: "about"
+    label: "About / Admin Section"
+    files:
+      - file: "src/content/about.md"
+        label: "About Content"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Highlight", name: "highlight", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "About Image", name: "aboutImg", widget: "image" }
+
+  # ---------------- SERVICES ----------------
   - name: "services"
-    label: "Services"
+    label: "Services / Cookies Section"
     files:
       - file: "src/content/services.md"
-        label: "Services"
+        label: "Services Content"
         name: "services"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Highlight", name: "highlight", widget: "string" }
-          - label: "Cookies"
-            name: "cookies"
+          - name: "cookies"
+            label: "Cookies"
             widget: "list"
             fields:
               - { label: "Name", name: "name", widget: "string" }
-              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Class", name: "imageClass", widget: "string" }
+
+  # ---------------- CONTACT ----------------
+  - name: "contact"
+    label: "Contact Section"
+    files:
+      - file: "src/content/contact.md"
+        label: "Contact Content"
+        name: "contact"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Input Placeholder", name: "inputPlaceholder", widget: "string" }
+          - { label: "Button Text", name: "buttonText", widget: "string" }
+          - { label: "Instagram Link", name: "instagramLink", widget: "string" }
+          - { label: "Logo Source", name: "logoSrc", widget: "image" }
+
+  # ---------------- NAV ----------------
+  - name: "nav"
+    label: "Navigation"
+    files:
+      - file: "src/content/nav.md"
+        label: "Navigation Content"
+        name: "nav"
+        fields:
+          - { label: "Logo Source", name: "logoSrc", widget: "image" }
