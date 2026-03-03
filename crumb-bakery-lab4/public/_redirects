@@ -1,1 +1,10 @@
-/admin    /admin/index.html   200
+# Redirect /admin (no slash) → /admin/ (trailing slash)
+# Must be first
+/admin  /admin/ 301
+
+# Serve index.html for /admin/ folder
+/admin/  /admin/index.html  200
+
+# Serve index.html for any nested admin paths (hash routing)
+# e.g., /admin/#/hero
+/admin/*  /admin/index.html  200
