@@ -75,3 +75,45 @@ This ensures that the page is user-friendly on mobile devices and adds interacti
 
 ## Live Demo
 [View Live Lab 3](https://anastasiat18.github.io/tum-web-lab2/)
+
+
+---
+
+
+# Lab 4 - Static Site Generator & Git CMS
+
+## Description
+For Lab 4, the Crumb Bakery landing page was migrated to a Static Site Generator (SSG) using Astro and integrated with a Git-based CMS (Decap CMS).
+
+This allows the client to edit content directly via a CMS without touching code, while maintaining a modern developer workflow. The site retains all previous features from Lab 3, including responsive design and mascot animation.
+
+## Customer Requirements Implemented
+- Migrate the landing page to a Static Site Generator (Astro)
+- Integrate a Git-based CMS (Decap CMS) for easy content editing
+- Ensure the TailwindCSS framework is fully integrated
+- Preserve previous responsive design and mascot behavior
+- All major content sections (Hero, About, Services, Contact, Navigation, Mascot) are CMS-editable
+
+## Dev Requirements Implemented
+- Used Astro as the SSG (no frontend frameworks like React/Vue)
+- Integrated Decap CMS for Git-based content editing
+- Structured the site with editable Markdown files for each section:
+  - Hero.md
+  - About.md
+  - Services.md
+  - Contact.md
+  - Nav.md
+  - Mascot.md
+- Implemented CMS configuration for all fields (title, subtitle, images, highlights, etc.)
+- Deployed live on Netlify with branch-based previews for pull requests
+- Maintained clean git history with commits for SSG migration and CMS setup
+
+## Tech Stack
+- Astro – Static Site Generator
+- Decap CMS – Git-based content management
+- TailwindCSS – Styling framework
+- HTML, CSS – Core structure and animations
+- Netlify – Deployment and preview environment
+
+## Live Demo
+[View Live Lab 4](https://taupe-pixie-57d72a.netlify.app/)
