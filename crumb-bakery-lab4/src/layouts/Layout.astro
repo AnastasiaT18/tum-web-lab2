@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 ---
-<html lang="en">
+<html lang="en" class="scroll-smooth w-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@ import '../styles/global.css';
     <link rel="icon" href="/favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Gaegu&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   </head>
-  <body class="font-[Poppins]">
+  <body class="font-[Poppins] w-full overflow-x-hidden m-0 p-0">
     <slot /> <!-- all your sections will be injected here -->
   </body>
 </html>
