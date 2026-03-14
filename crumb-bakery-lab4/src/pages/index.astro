@@ -31,6 +31,10 @@ const { data: contactData } = matter(contactFile);
 // Load Services content
 const servicesFile = fs.readFileSync(path.resolve("./src/content/Services.md"), "utf-8");
 const { data: servicesData } = matter(servicesFile);
+
+// Load Mascot content
+const mascotFile = fs.readFileSync(path.resolve("./src/content/Mascot.md"), "utf-8");
+const { data: mascotData } = matter(mascotFile);
 ---
 <Layout>
   <Nav {...navData}/>
@@ -38,7 +42,7 @@ const { data: servicesData } = matter(servicesFile);
   <About {...aboutData} />
   <Services {...servicesData} />
   <Contact {...contactData} />
-  <Mascot />
+  <Mascot {...mascotData} />
 
   
 </Layout>
