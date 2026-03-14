@@ -25,7 +25,7 @@ collections:
 
   # ---------------- ABOUT / ADMIN ----------------
   - name: "about"
-    label: "About / Admin Section"
+    label: "About Section"
     files:
       - file: "crumb-bakery-lab4/src/content/about.md"
         label: "About Content"
@@ -40,7 +40,7 @@ collections:
 
   # ---------------- SERVICES ----------------
   - name: "services"
-    label: "Services / Cookies Section"
+    label: "Services Section"
     files:
       - file: "crumb-bakery-lab4/src/content/services.md"
         label: "Services Content"
@@ -80,14 +80,3 @@ collections:
         name: "nav"
         fields:
           - { label: "Logo Source", name: "logoSrc", widget: "image" }
-
-  # # ---------------- PAGES ----------------
-  # - name: "pages"
-  #   label: "Pages"
-  #   files:
-  #     - label: "Home Page"
-  #       name: "home"
-  #       file: "src/content/home.md"
-  #       fields:
-  #         - { label: "Title", name: "title", widget: "string" }
-  #         - { label: "Body", name: "body", widget: "markdown" }
