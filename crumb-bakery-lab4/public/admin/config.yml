@@ -80,3 +80,16 @@ collections:
         name: "nav"
         fields:
           - { label: "Logo Source", name: "logoSrc", widget: "image" }
+
+          
+  
+   # ---------------- MASCOT ----------------
+  - name: "mascot"
+    label: "Mascot"
+    files:
+      - file: "crumb-bakery-lab4/src/content/mascot.md"
+        label: "Mascot Content"
+        name: "mascot"
+        fields:
+          - { label: "Logo Source", name: "message", widget: "string" }
+          - { label: "Mascot Image", name: "mascotImg", widget: "image" }
