@@ -1,17 +1,48 @@
 ---
+import Layout from "../layouts/Layout.astro";  
+import Nav from "../components/Nav.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Contact from "../components/Contact.astro";
+import Services from "../components/Services.astro";
+import Mascot from "../components/Mascot.astro";
 
+
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+
+// Load Hero content
+const heroFile = fs.readFileSync(path.resolve("./src/content/Hero.md"), "utf-8");
+const { data: heroData } = matter(heroFile);
+
+// Load Nav content
+const navFile = fs.readFileSync(path.resolve("./src/content/Nav.md"), "utf-8");
+const { data: navData } = matter(navFile);
+
+// Load About content
+const aboutFile = fs.readFileSync(path.resolve("./src/content/About.md"), "utf-8");
+const { data: aboutData } = matter(aboutFile);
+
+// Load Contact content
+const contactFile = fs.readFileSync(path.resolve("./src/content/Contact.md"), "utf-8");
+const { data: contactData } = matter(contactFile);
+
+// Load Services content
+const servicesFile = fs.readFileSync(path.resolve("./src/content/Services.md"), "utf-8");
+const { data: servicesData } = matter(servicesFile);
+
+// Load Mascot content
+const mascotFile = fs.readFileSync(path.resolve("./src/content/Mascot.md"), "utf-8");
+const { data: mascotData } = matter(mascotFile);
 ---
+<Layout>
+  <Nav {...navData}/>
+  <Hero {...heroData} />
+  <About {...aboutData} />
+  <Services {...servicesData} />
+  <Contact {...contactData} />
+  <Mascot {...mascotData} />
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  
+</Layout>

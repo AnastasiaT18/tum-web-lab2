@@ -1,0 +1,28 @@
+---
+const { title, subtitle, buttonText, heroImg } = Astro.props;
+---
+
+<section id="hero" class="w-full min-h-screen  flex flex-row bg-[#ffc0cb]">  
+  <div class="font-chewy flex flex-col justify-center w-full px-16 md:justify-end md:w-3/5">  
+    <div class="hero-text-shadow flex flex-col justify-end mb-[10%] h-[80%] z-20 text-[20vw] text-center mt-[20%] max-[400px]:mt-[40%] md:text-[6.5vw] md:text-left md:mb-[10%] font-black text-[#c23248]">
+      <p>{title}</p>
+
+      <p class="hero-text-shadow flex items-center text-white md:items-start">
+        {subtitle}
+      </p>
+    </div>
+
+    <div class="flex justify-center items-center md:justify-end md:items-center w-full h-1/3">
+      <div class="flex flex-col items-center text-center font-poppins font-bold">
+        <a href="#contact">
+        <button class="border-none focus:outline-none bg-[#c23248] text-white py-4 px-4 rounded-lg text-[3vh] font-semibold mb-2 hover:bg-[#ff90b5] hover:-translate-y-1 transition-all duration-200">            {buttonText}
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden md:flex justify-end items-end w-2/5 text-right">
+    <img src={heroImg} alt="Cookie Monster" class="h-[90vh] object-contain"/>
+  </div>
+</section>

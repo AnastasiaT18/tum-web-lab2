@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+    --font-chewy: "Chewy", cursive;
+    --font-poppins: "Poppins", sans-serif;
+    --font-gaegu: "Gaegu", cursive;
+}
+
+@import "./style.css";

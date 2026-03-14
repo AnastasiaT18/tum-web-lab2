@@ -1,0 +1,25 @@
+---
+const { title, highlight, subtitle, description, location, aboutImg } = Astro.props;
+---
+
+<section id="about" class="scroll-mt-12 min-h-screen !bg-white flex flex-col items-center justify-center px-6 py-20">
+  <div class="text-center mb-16">
+    <h2 class="text-[8vw] md:text-[3.5vw] font-bold text-[#ff90b5]">
+      {title}
+      <span class="font-[Chewy] text-[#c23248] ml-2">{highlight}</span>
+    </h2>
+  </div>
+
+  <div class="flex flex-col md:flex-row items-center justify-between gap-12 w-full md:w-[70%]">
+    <div class="flex justify-center">
+      <img src={aboutImg} alt="About photo" class="h-[25vh] md:h-[50vh] object-contain" />
+    </div>
+
+    <div class="md:w-1/2 text-center md:text-left">
+      <h3 class="font-[Chewy] text-4xl md:text-5xl text-[#c23248] mb-4">{subtitle}</h3>
+      <p class="font-semibold text-[4vw] md:text-xl mb-6">{description}</p>
+      <hr class="border-black my-6" />
+      <p class="font-medium text-base">{location}</p>
+    </div>
+  </div>
+</section>

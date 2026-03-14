@@ -1,0 +1,50 @@
+---
+const { title, highlight, cookies } = Astro.props;
+---
+
+<section id="services" class="!bg-white flex flex-col items-center !overflow-visible">
+
+  <!-- Header -->
+  <div class="w-full mt-28 flex justify-center items-end text-center">
+    <h2 class="font-bold text-[8vw]  md:text-[3.5vw] text-[#ff90b5]">
+      {title} 
+      <span class="font-[Chewy] text-[#c23248]">{highlight}</span>
+    </h2>
+  </div>
+
+  <!-- Grid Wrapper -->
+  <div class="mt-40 flex justify-center w-full !overflow-visible">
+    <div class="grid 
+                grid-cols-1 
+                md:grid-cols-2 
+                lg:grid-cols-3 
+                gap-40 md:gap-20 lg:gap-20
+                justify-items-center 
+                mb-12 !overflow-visible">
+
+      {cookies.map((cookie) => (
+        <div class="relative bg-[#FFC0CB] w-[240px] flex flex-col items-center pt-32 pb-6">
+          <img 
+            src={cookie.image}
+            class={cookie.imageClass}
+          />
+          <p class="font-[Chewy] text-black text-2xl text-center mt-4">
+            {cookie.name}
+          </p>
+          <p class="text-center text-sm px-4">
+            {cookie.description}
+          </p>
+        </div>
+      ))}
+
+    </div>
+  </div>
+
+  <!-- Section End -->
+  <div class="my-8">
+    <p class="font-[Chewy] font-bold text-5xl text-[#c23248]">
+      ...and more!
+    </p>
+  </div>
+
+</section>
