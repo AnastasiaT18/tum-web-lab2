@@ -56,6 +56,8 @@ collections:
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Class", name: "imageClass", widget: "string" }
+              - { label: "Hide this cookie", name: "hidden", widget: "boolean", default: false }
+
 
   # ---------------- CONTACT ----------------
   - name: "contact"
@@ -93,3 +95,5 @@ collections:
         fields:
           - { label: "Logo Source", name: "message", widget: "string" }
           - { label: "Mascot Image", name: "mascotImg", widget: "image" }
+
+# local_backend: true

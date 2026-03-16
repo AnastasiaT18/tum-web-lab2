@@ -1,5 +1,7 @@
 ---
 const { title, highlight, cookies } = Astro.props;
+const visibleCookies = cookies.filter(cookie => !cookie.hidden);
+
 ---
 
 <section id="services" class="!bg-white flex flex-col items-center !overflow-visible">
@@ -22,7 +24,7 @@ const { title, highlight, cookies } = Astro.props;
                 justify-items-center 
                 mb-12 !overflow-visible">
 
-      {cookies.map((cookie) => (
+      {visibleCookies.map((cookie) => (
         <div class="relative bg-[#FFC0CB] w-[240px] flex flex-col items-center pt-32 pb-6">
           <img 
             src={cookie.image}
